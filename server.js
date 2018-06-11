@@ -10,9 +10,9 @@ app.use(express.static(__dirname + '/public'));
 
 // Express Middleware functions
 // This will stop everything from working since line is located above the other functions
-app.use((req, res, next) => {
-   res.render('maintenance.hbs');
-});
+// app.use((req, res, next) => {
+//    res.render('maintenance.hbs');
+// });
 
 app.get('/', (req, res) => {
    // res.send('<h1>Hello from RAYT! </h1>');
